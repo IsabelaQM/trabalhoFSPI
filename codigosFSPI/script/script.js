@@ -61,3 +61,47 @@ function copyResult() {
             console.error('Erro ao copiar o resultado: ', error);
         });
 }
+
+function converterBinDec() {
+    var binario = document.getElementById("binario").value;
+    var decimal = binarioParaDecimal(binario);
+    document.getElementById("resultadoDecimal").textContent = "Decimal: " + decimal;
+}
+function converterDecBin() {
+    var decimal = document.getElementById("decimal").value;
+    var binario = decimalParaBinario(decimal);
+    document.getElementById("resultadoBinario").textContent = "Dinário: " + binario;
+}
+function converterDecHex() {
+    var decimal = document.getElementById("decimalHex").value;
+    var hex = decimalParaHexadecimal(decimal);
+    document.getElementById("resultadoHexadecimal").textContent = "Hexadecimal: " + hex;
+}
+
+function converterHexDec() {
+    var hex = document.getElementById("hexadecimalDec").value;
+    var decimal = hexadecimalParaDecimal(hex);
+    document.getElementById("resultadoDecimalHex").textContent = "Decimal: " + decimal;
+}
+
+function decimalParaBinario(decimal) {
+    return parseInt(decimal).toString(2);
+}
+function binarioParaDecimal(binario) {
+    var decimal = 0;
+    var posicao = 0;
+    while (binario > 0) {
+        var digito = binario % 10;
+        decimal += digito * Math.pow(2, posicao);
+        binario = Math.floor(binario / 10);
+        posicao++;
+
+    }
+    return decimal;
+}
+function decimalParaHexadecimal(decimal) {
+    return parseInt(decimal).toString(16).toUpperCase();
+}
+function hexadecimalParaDecimal(hexadecimal) {
+    return parseInt(hexadecimal, 16);
+}
