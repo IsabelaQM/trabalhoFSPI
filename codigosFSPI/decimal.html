@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/binario.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="binario.html">Binário</a></li>
+                <li><a href="decimal.html">Decimal</a></li>
+                <li><a href="hexadecimal.html">Hexadecimal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h1>Sistema Decimal</h1>
+
+            <p>
+                O sistema decimal é o sistema de numeração mais utilizado no cotidiano. Ele é um sistema em base 10, o
+                que significa que é composto por dez dígitos: de 0 a 9. Cada posição em um número decimal representa uma
+                potência de 10. O sistema decimal é utilizado a todo instante no nosso dia-a-dia, seja para obter
+                quantidades de itens das nossas casas ou até operações matemáticas.
+            </p>
+
+            <p>
+                Parte-se da mesma lógica já apresentada para converter números de outros sistemas numéricos para
+                decimal. Exemplificando, para converter números binários em decimais, deve-se multiplicar cada número
+                binário pela potência de 2 correspondente à sua posição e somar os resultados. De maneira semelhante,
+                para conversão de um número hexadecimal em decimal, multiplica-se cada dígito hexadecimal pelo valor
+                correspondente e se somam os resultados.
+            </p>
+        </section>
+
+        <section>
+            <h2>Conversoes entre Sistemas</h2>
+
+            <h3>Decimal para Binário</h3>
+
+
+            <p>Divida o número decimal por 2 sucessivamente até chegar a 0, registrando o resto de cada divisão.
+                O número binário é formado pelos restos, lidos em ordem reversa, do último para o primeiro.</p>
+
+            <p>Exemplo: Converter o número decimal 42 para binário.</p>
+
+            <p>Passo 1: Dividir o número por 2 sucessivamente até chegar a 0.</p>
+            <p>42 ÷ 2 = 21, resto 0</p>
+            <p>21 ÷ 2 = 10, resto 1</p>
+            <p>10 ÷ 2 = 5, resto 0</p>
+            <p>5 ÷ 2 = 2, resto 1</p>
+            <p>2 ÷ 2 = 1, resto 0</p>
+            <p>1 ÷ 2 = 0, resto 1</p>
+            <p>Passo 2: Registrar os restos em ordem reversa.
+                Os restos são 101010, lidos de trás para frente.</p>
+            <p>Portanto, o número decimal 42 é igual a 101010 em binário.</p>
+            
+
+            <h3>Decimal para Hexadecimal</h3>
+            <p>Para a conversão de decimal para hexadecimal, dividimos o número decimal por 16 sucessivamente até chegar a 0, registrando o resto de cada divisão.
+                Os restos de 10 a 15 são representados pelas letras A, B, C, D, E e F, respectivamente. Os demais restos são 
+                representados pelos próprios números.</p>
+
+                <p>Exemplo: Converter o número decimal 42 para hexadecimal.</p>
+                <p>Passo 1: Dividir o número por 16 sucessivamente até chegar a 0.
+                    42 ÷ 16 = 2, resto 10 (letra A)</p>
+                <p>Passo 2: Registrar os restos em ordem reversa.
+                    O resto é A.Portanto, o número decimal 42 é igual a 2A em hexadecimal.</p>
+        </section>
+    </main>
+</body>
+
+</html>
