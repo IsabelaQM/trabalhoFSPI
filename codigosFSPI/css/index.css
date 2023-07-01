@@ -27,7 +27,7 @@ nav li a {
 
 nav li a:hover {
     background-color: #111;
-    border-bottom: 2px solid white;
+    padding: 14px 16px;
 }
 
 body {
@@ -50,6 +50,7 @@ input {
 
 .result {
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* Estilos CSS para o botão */
@@ -78,7 +79,7 @@ input {
 
 .section1 h1 {
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .section1 p {
@@ -89,6 +90,17 @@ input {
     background-color: #5c30fc;
     padding: 20px;
     color: white;
+}
+/* Section3 */
+.section3 {
+    background-color: #5c30fc;
+    padding: 50px;
+    color: white;
+}
+.section3 h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    margin-top: 50px;
 }
 
 /* Estilos CSS para o footer */
