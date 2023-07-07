@@ -42,7 +42,9 @@ decimal ou hexadecimal) e exibir sua representação nas outras bases ao mesmo t
 - ``HTML``
 - ``JavaScript``
 
-
+### Próximos passos
+ 1) Implementar versão mobile.
+    
 ### - Desenvolvedores
 
 <a href="https://github.com/IsabelaQM"> - Isabela Queiroz Marinho</a>
