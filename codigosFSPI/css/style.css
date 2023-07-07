@@ -65,7 +65,6 @@ input {
     font-size: 16px;
 }
 
-
 .copy-button:hover {
     background-color: #45a049;
 }
@@ -90,17 +89,6 @@ input {
     background-color: #5c30fc;
     padding: 20px;
     color: white;
-}
-/* Section3 */
-.section3 {
-    background-color: #5c30fc;
-    padding: 50px;
-    color: white;
-}
-.section3 h1 {
-    font-size: 24px;
-    margin-bottom: 30px;
-    margin-top: 50px;
 }
 
 /* Estilos CSS para o footer */
