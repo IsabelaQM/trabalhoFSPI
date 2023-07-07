@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="script/script.js"></script>
-    <title>Conversor de Bases</title>
+    <title>Sistemas de numeração</title>
 </head>
 
 <body>
@@ -14,16 +14,16 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="pagina1.html">Página 1</a></li>
-                <li><a href="pagina2.html">Página 2</a></li>
-                <li><a href="pagina3.html">Página 3</a></li>
+                <li><a href="binario.html">Binário</a></li>
+                <li><a href="decimal.html">Decimal</a></li>
+                <li><a href="hexadecimal.html">Hexadecimal</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="section1">
-            <h1>Conversor de Bases</h1>
+            <h1>Sistemas de numeração</h1>
             <p>Os sistemas de numeração são conjuntos de regras e símbolos utilizados para representar quantidades e
                 valores numéricos. Eles são fundamentais para a comunicação e realização de cálculos matemáticos em
                 diversas
@@ -39,60 +39,23 @@
         </section>
 
         <section class="section2">
-            <label for="binary">Binário:</label>
-            <input type="text" id="binary" oninput="convert('binary')" />
-
-            <label for="decimal">Decimal:</label>
-            <input type="text" id="decimal" oninput="convert('decimal')" />
-
-            <label for="hexadecimal">Hexadecimal:</label>
-            <input type="text" id="hexadecimal" oninput="convert('hexadecimal')" />
-
-            <div class="result">
-                <label>Resultado:</label>
-                <p id="binaryResult"></p>
-                <p id="decimalResult"></p>
-                <p id="hexadecimalResult"></p>
-            </div>
-
-            <button class="copy-button" onclick="copyResult()">Copiar Resultado</button>
-        </section>
-
-        <section class="section3">
-            <h1>Conversor Decimal-Binário</h1>
-
-            <label for="decimal">Número decimal:</label>
-            <input type="text" id="decimal">
-            <button class="copy-button" onclick="converterDecBin()">Converter</button>
-
-            <p id="resultadoBinario"></p>
-
-            <h1>Conversor Binário-Decimal</h1>
-            <label for="binario">Número binário:</label>
-            <input type="text" id="binario">
-            <button class="copy-button" onclick="converterBinDec()">Converter</button>
-
-            <p id="resultadoDecimal"></p>
-
-            <h1>Conversor Decimal-Hexadecimal</h1>
-            <label for="decimal">Número decimal:</label>
-            <input type="text" id="decimalHex">
-            <button class="copy-button" onclick="converterDecHex()">Converter</button>
-
-            <p id="resultadoHexadecimal"></p>
-
-            <h1>Conversor Hexadecimal-Decimal</h1>
-            <label for="hexadecimal">Número Hexadecimal:</label>
-            <input type="text" id="hexadecimalDec">
-            <button class="copy-button" onclick="converterHexDec()">Converter</button>
-
-            <p id="resultadoDecimalHex"></p>
-
+            <h2>Conversor entre decimais, binários e hexadecimais: </h2>
+            <form>
+                <label for="decimal">Decimal:</label>
+                <input type="text" id="decimal" oninput="convertFromDecimal('decimal', 'binary', 'hexadecimal')" placeholder="Digite um número decimal">
+                <button type="button" onclick="copyToClipboard('decimal')" class="copy-button">Copiar</button>
+                <label for="binary">Binário:</label>
+                <input type="text" id="binary" oninput="convertFromBinary('binary', 'decimal', 'hexadecimal')" placeholder="Digite um número binário">
+                <button type="button" onclick="copyToClipboard('binary')" class="copy-button">Copiar</button>
+                <label for="hexadecimal">Hexadecimal:</label>
+                <input type="text" id="hexadecimal" oninput="convertFromHexadecimal('hexadecimal', 'decimal', 'binary')" placeholder="Digite um número hexadecimal">
+                <button type="button" onclick="copyToClipboard('hexadecimal')" class="copy-button">Copiar</button>
+              </form>
         </section>
     </main>
 
     <footer>
-        <p>Direitos Reservados</p>
+        <p>Todos os direitos reservados</p>
     </footer>
 </body>
 
