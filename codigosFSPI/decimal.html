@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/binario.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/pages.css">
+    <script src="script/conversor.js"></script>
+    <title>Sistema Decimal</title>
 </head>
 
 <body>
@@ -28,52 +29,70 @@
             <p>
                 O sistema decimal é o sistema de numeração mais utilizado no cotidiano. Ele é um sistema em base 10, o
                 que significa que é composto por dez dígitos: de 0 a 9. Cada posição em um número decimal representa uma
-                potência de 10. O sistema decimal é utilizado a todo instante no nosso dia-a-dia, seja para obter
-                quantidades de itens das nossas casas ou até operações matemáticas.
+                potência de 10. O sistema decimal está presente a todo instante no nosso dia-a-dia, seja para obter
+                quantidades de itens  ou até operações matemáticas.
             </p>
 
             <p>
-                Parte-se da mesma lógica já apresentada para converter números de outros sistemas numéricos para
+                A lógica para converter números decimais para as bases binárias e hexadecimais parte do mesmo raciocínio apresentado para converter números de outros sistemas numéricos para
                 decimal. Exemplificando, para converter números binários em decimais, deve-se multiplicar cada número
                 binário pela potência de 2 correspondente à sua posição e somar os resultados. De maneira semelhante,
                 para conversão de um número hexadecimal em decimal, multiplica-se cada dígito hexadecimal pelo valor
                 correspondente e se somam os resultados.
             </p>
+
+            <h3 class="section1">Converter Decimal para Binário e Hexadecimal</h3>
+            <form class="section2">
+                <label for="decimal">Decimal:</label>
+                <input type="number" id="decimal" oninput="convertDecimal()" placeholder="Digite um número decimal">
+                <br>
+                <label for="binary">Binário:</label>
+                <input type="text" id="binary" readonly>
+                <br>
+                <button class="copy-button" type="button" onclick="copyToClipboard('binary')">Copiar</button>
+                <br>
+                <label for="hexadecimal">Hexadecimal:</label>
+                <input type="text" id="hexadecimal" readonly>
+                <br>
+                <button class="copy-button" type="button" onclick="copyToClipboard('hexadecimal')">Copiar</button>
+            </form>
         </section>
 
         <section>
-            <h2>Conversoes entre Sistemas</h2>
-
+            <h2>Conversões entre Sistemas</h2>
             <h3>Decimal para Binário</h3>
 
-
-            <p>Divida o número decimal por 2 sucessivamente até chegar a 0, registrando o resto de cada divisão.
+            <p>* Divida o número decimal por 2 sucessivamente até chegar a 0, registrando o resto de cada divisão.
                 O número binário é formado pelos restos, lidos em ordem reversa, do último para o primeiro.</p>
 
-            <p>Exemplo: Converter o número decimal 42 para binário.</p>
+            <p>Exemplo: Converter o número decimal 45 para binário.</p>
 
             <p>Passo 1: Dividir o número por 2 sucessivamente até chegar a 0.</p>
-            <p>42 ÷ 2 = 21, resto 0</p>
-            <p>21 ÷ 2 = 10, resto 1</p>
-            <p>10 ÷ 2 = 5, resto 0</p>
+            <p>45 ÷ 2 = 22, resto 0</p>
+            <p>22 ÷ 2 = 11, resto 1</p>
+            <p>11 ÷ 2 = 5, resto 0</p>
             <p>5 ÷ 2 = 2, resto 1</p>
             <p>2 ÷ 2 = 1, resto 0</p>
             <p>1 ÷ 2 = 0, resto 1</p>
             <p>Passo 2: Registrar os restos em ordem reversa.
                 Os restos são 101010, lidos de trás para frente.</p>
-            <p>Portanto, o número decimal 42 é igual a 101010 em binário.</p>
-            
+            <p>Portanto, o número decimal 45 é igual a 101101 em binário.</p>
+            <img src="img/decBinario.jpg">
+            <p style="text-align:center">Fonte: <a href="https://embarcados.com.br/conversao-entre-sistemas-de-numeracao/" target="_blank">https://embarcados.com.br/conversao-entre-sistemas-de-numeracao/</a></p>
 
             <h3>Decimal para Hexadecimal</h3>
-            <p>Para a conversão de decimal para hexadecimal, dividimos o número decimal por 16 sucessivamente até chegar a 0, registrando o resto de cada divisão.
-                Os restos de 10 a 15 são representados pelas letras A, B, C, D, E e F, respectivamente. Os demais restos são 
+            <p>* Para a conversão de decimal para hexadecimal, dividimos o número decimal por 16 sucessivamente até chegar
+                a 0, registrando o resto de cada divisão.
+                Os restos de 10 a 15 são representados pelas letras A, B, C, D, E e F, respectivamente. Os demais restos
+                são
                 representados pelos próprios números.</p>
 
-                <p>Exemplo: Converter o número decimal 42 para hexadecimal.</p>
-                <p>Passo 1: Dividir o número por 16 sucessivamente até chegar a 0.
-                    42 ÷ 16 = 2, resto 10 (letra A)</p>
-                <p>Passo 2: Registrar os restos em ordem reversa.
-                    O resto é A.Portanto, o número decimal 42 é igual a 2A em hexadecimal.</p>
+            <p>Exemplo: Converter o número decimal 438 para hexadecimal.</p>
+            <p>Passo 1: Dividir o número por 16 sucessivamente até chegar a 0.</p>
+            <p>Passo 2: Registrar os restos em ordem reversa. Note que o resto da segunda divisão foi o número 11, que corresponde ao número B em Hexadecimal.
+            .Portanto, o número decimal 438 é igual a 1B6 em hexadecimal.</p>
+            <img src="img/decHexadecimal.jpg">
+            <p style="text-align:center">Fonte: <a href="https://embarcados.com.br/conversao-entre-sistemas-de-numeracao/" target="_blank">https://embarcados.com.br/conversao-entre-sistemas-de-numeracao/</a></p>
         </section>
     </main>
 </body>
