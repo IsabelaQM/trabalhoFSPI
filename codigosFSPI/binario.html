@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/binario.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/pages.css">
+    <title>Sistema Binário</title>
 </head>
 
 <body>
@@ -47,33 +47,36 @@
         </section>
 
         <section>
-            <h2>Conversoes entre Sistemas</h2>
+            <h2>Conversões entre Sistemas</h2>
 
-            <h3>Binário para Decimal</h3>
-            <p>Inicie atribuindo as posições aos dígitos binários, começando da direita para a esquerda:</p>
+            <h3> - Binário para Decimal - </h3>
+            <p><b>Passo 1 : </b>Inicie atribuindo as posições aos dígitos binários, começando da direita para a esquerda:</p>
 
                 <p>Posição: 6 5 4 3 2 1 0</p>
                 <p>Binário: 1 1 0 1 1 0 1</p>
                 
-                <p>Agora, vamos calcular o valor decimal de cada posição. Para cada dígito binário, multiplicamos por 2 elevado à sua posição e somamos os resultados:</p>
+                <p><b>Passo 2 : </b>Agora, vamos calcular o valor decimal de cada posição. Para cada dígito binário, multiplicamos por 2 elevado à sua posição e somamos os resultados:</p>
                 
-                <p>1 * 2^6 + 1 * 2^5 + 0 * 2^4 + 1 * 2^3 + 1 * 2^2 + 0 * 2^1 + 1 * 2^0</p>
+                <p> Sendo assim, decimal = 1 * 2^6 + 1 * 2^5 + 0 * 2^4 + 1 * 2^3 + 1 * 2^2 + 0 * 2^1 + 1 * 2^0</p>
                 <p>= 64 + 32 + 0 + 8 + 4 + 0 + 1
                     = 109</p>
-                
                 <p>Portanto, o número binário 1101101 é igual a 109 em decimal.</p>
+                <p>Confira mais um exmplo a seguir, com a a conversão do número 1011  para decimal: </p>
+                <img src="img/binarioDecimal.jpg">
+                <p style="text-align:center">Fonte: <a href="https://embarcados.com.br/conversao-entre-sistemas-de-numeracao/" target="_blank">https://embarcados.com.br/conversao-entre-sistemas-de-numeracao/</a></p>
+                
 
-                <h3>Binário para Hexadecimal</h3>
-                <p>Divida o número binário em grupos de 4 dígitos, começando da direita para a esquerda. Se o número binário não for múltiplo de 4, adicione zeros à esquerda para formar grupos completos de 4 dígitos.
+                <h3> - Binário para Hexadecimal - </h3>
+                <p>* Divida o número binário em grupos de 4 dígitos, começando da direita para a esquerda. Se a quantidade de dígitos do número binário não for múltipla de 4, adicione zeros à esquerda para formar grupos completos de 4 dígitos.
                    <p>Atribua a cada grupo de 4 dígitos um dígito hexadecimal correspondente.
                     Escreva o número hexadecimal resultante, combinando os dígitos hexadecimais atribuídos a cada grupo.
                     Abaixo está um exemplo passo a passo:</p> 
                     
                     <p>Exemplo: Converter o binário 1101101 para hexadecimal.</p>
                     
-                    <p>Divida o número binário em grupos de 4 dígitos:</p>
-                    <p> Binário: 1 1 0 1 1 0 1</p>
-                    <p>Agrupamento: 1101 101</p>
+                    <p><b>Passo 1 : </b>Divida o número binário em grupos de 4 dígitos:</p>
+                    <p> - Binário: 1 1 0 1 1 0 1</p>
+                    <p> - Agrupamento: 1101 101</p>
                     <p>Atribua um dígito hexadecimal a cada grupo de 4 dígitos:</p>
                     <p>Para o grupo 1101, atribuímos o dígito hexadecimal D.</p>
                     <p>Para o grupo 101, atribuímos o dígito hexadecimal 5.</p>
@@ -81,6 +84,11 @@
                     Combinando os dígitos hexadecimais atribuídos a cada grupo, temos: 5D.</p>
                     
                     <p>Portanto, o número binário 1101101 é igual a 5D em hexadecimal.</p>
+                    <p>A seguir está a tabela com as correspondências entre cada dígito hexadecimal e os dígitos binários.</p>
+                    <br>
+                    <p style="text-align:center">Tabela 1 - Equivalência entre binários e hexadecimais</p>
+                    <img src="img/binHexadecimal.jpg" class="tabela">
+                    <p style="text-align:center">Fonte: <a href="https://embarcados.com.br/conversao-entre-sistemas-de-numeracao/" target="_blank">https://embarcados.com.br/conversao-entre-sistemas-de-numeracao/</a></p>
                     <p></p>
         </section>
     </main>
