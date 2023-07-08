@@ -2,7 +2,8 @@
 
 Trabalho sobre Desenvolvimento Web e Versionamento: Explorando Sistemas de Numeração e Integração com o GitHub da Disciplina de Fundamentos de Sistema para Internet (curso Tecnologia em Sistemas para Internet - IFTM Uberlândia)
 
-
+### :computer: Projeto rodando: 
+<a href="https://isabelaqm.github.io/trabalhoFSPI/index.html">Sistemas de Numeração</a> 
 ### 🔨 Funcionalidades do projeto
 <br>
 
@@ -42,10 +43,10 @@ decimal ou hexadecimal) e exibir sua representação nas outras bases ao mesmo t
 - ``HTML``
 - ``JavaScript``
 
-### Próximos passos
+### :notebook_with_decorative_cover: Próximos passos
  1) Implementar versão mobile.
     
-### - Desenvolvedores
+### :woman_technologist: Desenvolvedores
 
 <a href="https://github.com/IsabelaQM"> - Isabela Queiroz Marinho</a>
 <br>
