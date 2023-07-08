@@ -4,7 +4,7 @@ Trabalho sobre Desenvolvimento Web e Versionamento: Explorando Sistemas de Numer
 
 ### :computer: Projeto rodando: 
 <a href="https://isabelaqm.github.io/trabalhoFSPI/index.html">Sistemas de Numeração</a> 
-### 🔨 Funcionalidades do projeto
+### 🔨 Funcionalidades e etapas do projeto
 <br>
 
   - Parte 1 - Versionamento com GitHub:
@@ -25,7 +25,7 @@ hexadecimal). A página deve incluir explicações sobre cada sistema e exemplos
 e hexadecimal ao mesmo tempo.
           - Implementar um conversor que permita ao usuário digitar um número em qualquer uma das bases (binário,
 decimal ou hexadecimal) e exibir sua representação nas outras bases ao mesmo tempo.
-          - <b>(Extra)</b> Adicione um botão que permita ao usuário copiar o resultado da conversão para a área de transferência.
+          - <b>(Extra)</b> Adicionar um botão que permita ao usuário copiar o resultado da conversão para a área de transferência.
 <br>
   
   - Parte 3 - Hospedagem da Página Web no Github Pages:
