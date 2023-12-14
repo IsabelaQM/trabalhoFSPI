@@ -2,7 +2,7 @@
 
 Trabalho sobre Desenvolvimento Web e Versionamento: Explorando Sistemas de Numeração e Integração com o GitHub da Disciplina de Fundamentos de Sistema para Internet (curso Tecnologia em Sistemas para Internet - IFTM Uberlândia)
 
-### :computer: Projeto rodando: 
+### Projeto rodando: 
 <a href="https://isabelaqm.github.io/trabalhoFSPI/index.html">Sistemas de Numeração</a> 
 ### 🔨 Funcionalidades e etapas do projeto
 <br>
